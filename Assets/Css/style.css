@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -8,9 +9,69 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    display: block;
+    margin: 2px 0 -20px 0 !important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 a {
+
+    color: white;
+}
+
+select:hover {
+    background-color: #04aa6d;
+
+}
+
+a:hover {
+    background-color: #04aa6d;
+
+}
+
+/* Navbar */
 header {
     background-color: white;
+  
 }
+.topnav {
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
 
 .wrapper {
     overflow: hidden;
@@ -40,22 +101,6 @@ header {
 
 }
 
-h4 a {
-
-    color: white;
-}
-
-select:hover {
-    background-color: #04aa6d;
-
-}
-
-a:hover {
-    background-color: #04aa6d;
-
-}
-
-
 .middle select {
     padding: 2rem 16px;
     font-size: 22px;
@@ -75,6 +120,7 @@ a:hover {
 .right {
     width: 45%;
     padding: 18px 16px;
+
 }
 
 .box {
@@ -95,20 +141,6 @@ a:hover {
 
 }
 
-.main {
-    background-color: #282A35;
-    padding-top: 90px;
-    padding-bottom: 90px;
-}
-
-button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 25px;
-    margin-right: 15px;
-
-}
-
 .button1 {
     border: none;
     vertical-align: middle;
@@ -119,8 +151,12 @@ button {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    padding: 1rem 20px;
+    font-weight: bold;
 }
-
+.right a{
+    border-radius: 25px;
+}
 .button2 {
     border: none;
     vertical-align: middle;
@@ -131,6 +167,8 @@ button {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    padding: 1rem 30px;
+    font-weight: bold;
 }
 
 .button3 {
@@ -143,6 +181,8 @@ button {
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    padding: 1rem 35px;
+    font-weight: bold;
 }
 
 .button4 {
@@ -151,6 +191,18 @@ button {
     text-align: center;
     color: white;
     font-size: 18px;
+    padding: 1rem 35px;
+    font-weight: bold;
+}
+
+/* Navbar */
+/* Learn to code section */
+
+
+.main {
+    background-color: #282A35;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .content1 {
@@ -166,12 +218,6 @@ button {
     color: white;
 }
 
-h1 {
-    display: block;
-    margin: 2px 0 -20px 0 !important;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .learntocodeh3 {
     color: #FFC0C7;
     font-weight: 700;
@@ -179,74 +225,58 @@ h1 {
     font-size: 23px;
 }
 
-form.example {
-    position: relative;
-}
-
-form {
-    display: block;
-    margin-top: 0em;
-}
-
-
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid #282A35;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-    border-radius: 25px;
-    background: white;
-    border-right: 1px solid #04AA6D;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-
-}
-
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    color: white;
-    font-size: 17px;
-    border: 1px solid#282A35;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 25px;
-    background-color: #04AA6D;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-
-}
-
 button {
     display: inline-block;
     text-align: center;
     margin: 0em;
-    padding: 10px;
+    border-radius: 25px;
+    padding: 8px 16px;
     border-width: 1px;
+    border: none;
+    margin-right: 15px;
 
 }
 
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h4 {
+.input-btn {
+    width: 400px;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.search-btn {
+    width: 100px;
+    height: 45px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    background-color: #04aa6d;
+    color: white;
+}
+
+
+
+/* Learn to code section end */
+/* HTML section */
+.flex-container {
+    background-color: #D9EEE1 !important;
+    color: black !important;
+    margin-top: -10px;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
     display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
 }
-
-
-/* html section */
 
 .wrapper3 {
     background-color: #D9EEE1;
@@ -264,15 +294,6 @@ h4 {
     flex: 1;
 }
 
-.left-section a {
-    text-decoration: none;
-    display: block;
-    width: 220px;
-    margin: 1rem auto;
-    border-radius: 30px;
-    padding: 0.5rem 1.5rem;
-}
-
 .left-section h1 {
     font-size: 4rem;
 }
@@ -283,6 +304,12 @@ h4 {
 
 .left-section a {
     font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    margin: 1rem auto;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
 }
 
 .btn1 {
@@ -335,6 +362,9 @@ h4 {
     color: #fff;
 }
 
+/* html section */
+
+/* CSS section */
 .css {
     background-color: #FFF4A3 !important;
     padding-top: 3%;
@@ -343,16 +373,9 @@ h4 {
     padding-left: 3%;
 }
 
-/* Wrapper 1 */
-.flex-container {
-    background-color: #D9EEE1 !important;
-    color: black !important;
-    margin-top: -10px;
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
-    display: block;
-}
+/* CSS section */
 
+/* Javascript Section */
 .javascript {
     padding-top: 3%;
     padding-right: 3%;
@@ -365,6 +388,8 @@ h4 {
     width: 280px;
 }
 
+/* Javascript Section */
+/* Python  Section*/
 .python {
     padding-top: 3%;
     padding-right: 3%;
@@ -375,6 +400,10 @@ h4 {
 
 }
 
+/* Python  Section*/
+
+/* SQL  Section*/
+
 .sql {
     padding-top: 3%;
     padding-right: 3%;
@@ -384,7 +413,9 @@ h4 {
     color: black !important;
 }
 
-/* flex */
+/* SQL  Section*/
+
+/* php including other languages section --> */
 .flex-section {
     display: flex;
     flex-wrap: wrap;
@@ -401,19 +432,22 @@ h4 {
     padding: 5rem;
     width: 400px;
     color: black;
-    background-color: #282A35; 
-  
+    background-color: #282A35;
+
 }
-.border1{
+
+.border1 {
     border-radius: 5px;
     background-color: #FFC0C7;
     padding: 7rem 24px;
 }
-h5{
+
+h5 {
     font-weight: 400px;
     font-size: 18px;
 }
-.border a{
+
+.border a {
     text-decoration: none;
     font-size: 18px;
     margin: auto;
@@ -423,52 +457,556 @@ h5{
     background-color: #282A35;
     color: white;
     padding: 8px 16px;
-    
+
 }
-.border2{
+
+.border2 {
     border-radius: 5px;
     background-color: #FFF4A3;
     color: black;
     padding: 24px;
     padding: 7rem 24px;
 }
-.border3{
+
+.border3 {
     border-radius: 5px;
     color: black;
     background-color: #F3ECEA;
     padding: 7rem 24px;
 
 }
-.border4{
+
+.border4 {
     border-radius: 5px;
     color: black;
     background-color: #D9EEE1;
     padding: 7rem 24px;
 }
-.border5{
+
+.border5 {
     border-radius: 5px;
     color: black;
     background-color: #96D4D4;
     padding: 7rem 24px;
 }
-.border6{
+
+.border6 {
     border-radius: 5px;
     color: black;
     background-color: #E7E9EB;
     padding: 7rem 24px;
 }
-.border7{
+
+.border7 {
     border-radius: 5px;
     background-color: #FFC0C7;
-    padding: 5rem 24px;  
+    padding: 5rem 24px;
 }
-.border8{
+
+.border8 {
     border-radius: 5px;
     background-color: #FFF4A3;
-    padding: 5rem 24px;  
+    padding: 5rem 24px;
 }
-.flex1{
-    flex: 1 1 200px;
-    padding: 1rem;
+
+/*  <!-- php including other languages section ends here--> */
+
+
+
+/* Box Section */
+
+.flex-section1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #282A35;
+}
+
+.flex1 {
+    flex: 1 1 500px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: center;
 }
+
+.border9 {
+    background-color: #F3ECEA !important;
+    color: black !important;
+    padding: 4rem;
+    border-radius: 5px
+}
+
+.border10 {
+    background-color: #D9EEE1 !important;
+    color: black !important;
+    padding: 4rem;
+    border-radius: 5px
+}
+
+/* Box Section */
+/*    <!-- Code Editor section --> */
+.w3-padding {
+    padding: 8px 16px!important;
+}
+.w3-content, .w3-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.codeeditorbr-container {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.codeeditorbr-row {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.codeeditorbr-dot {
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 3px;
+}
+.codeeditorbr-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div {
+    display: block;
+}
+.codeeditorbr-left {
+    width: 20%;
+}
+.codeeditorbr-column {
+    float: left;
+}
+.codeeditorbr-input {
+    width: 80%;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    margin-top: -8px;
+    height: 22px;
+    color: #666;
+    font-size: 14px;
+    padding: 5px;
+}
+.w3-bar {
+    position: relative;
+    z-index: 4;
+    font-size: 18px;
+    background-color: white;
+    color: #282A35;
+}
+.w3-bar {
+    width: 100%;
+    overflow: hidden;
+}
+.ws-yellow {
+    background-color: #FFF4A3!important;
+    color: black!important;
+}
+.w3-bar .w3-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.codeeditorbr-tablink {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #ffffff;
+}
+.ws-btn {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #04AA6D;
+    color: #ffffff;
+}
+
+
+.ws-grey {
+    background-color: #E7E9EB!important;
+    color: black!important;
+}
+.code-btn {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #04AA6D;
+    color: #ffffff;
+}
+
+.yellow {
+    background-color: #FFF4A3 !important;
+    color: black !important;
+}
+
+/*  <!-- Code Editor section ends here--> */
+/*  <!-- My Learning section starts here --> */
+.padding {
+    background-color: #D9EEE1 !important;
+    color: black !important;
+    text-align: center;
+    padding: 5rem;
+}
+
+/* <!-- My Learning section ends here --> */
+/*   <!-- Become a PRO User section--> */
+.padding1 {
+    padding: 5rem;
+    text-align: center;
+}
+
+.pro-caption {
+    text-align: center;
+    padding: 70px 15px 70px 15px;
+    color: white;
+}
+
+.pro-caption h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 55px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    font-family: Source Sans Pro;
+    color: #fff;
+    margin: 0;
+}
+
+.pro-caption h3 {
+    font-size: 25px;
+    color: #FFC0C7;
+    margin: 19px 0;
+}
+
+.pro-caption li {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: left;
+    list-style-type: none;
+}
+
+.pro-caption a {
+    color: white;
+}
+
+/* <!-- Become a PRO User section ends here --> */
+/*    <!-- Code Game section starts here --> */
+.padding2 {
+    background-color: #96D4D4 !important;
+    color: black !important;
+    text-align: center;
+    padding: 8rem;
+}
+
+/* <!-- Code Game section ends here --> */
+/*   <!-- Exercises and Quizzes section--> */
+.class2 {
+    padding: 3rem;
+
+}
+
+.flex-section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex2 {
+    width: 800px;
+}
+
+.border11 {
+    padding: 70px 50px;
+    font-size: 35px;
+    width: 87%;
+    opacity: 0.97;
+    border-radius: 5px;
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+.border12 {
+    padding: 70px 50px;
+    font-size: 35px;
+    width: 87%;
+    opacity: 0.97;
+    border-radius: 5px;
+    background-color: #FFF4A3 !important;
+    color: black !important;
+}
+
+/* <!-- Exercises and Quizzes section ends here --> */
+/* <!-- Web Templates section starts here --> */
+
+.padding3 {
+    background-color: #E7E9EB !important;
+    color: black !important;
+    text-align: center;
+    padding: 5rem;
+}
+
+.code-btn1 {
+    background-color: black !important;
+    color: #ffffff !important;
+}
+
+/* <!-- Web Templates section ends here --> */
+/* <!-- How To Section starts here --> */
+.vl-howto {
+    border-left: 50px solid black;
+    height: 85px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.btn5 {
+    background-color: black !important;
+    color: #ffffff !important;
+}
+#howto_iframe {
+    width: 100%;
+    border: 6px solid #e3e6e8;
+    height: 400px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* <!-- How To Section ends here --> */
+/* Footer section starts here */
+.footer {
+    padding: 25px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+}
+
+.quizzes a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.forum a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.forum a:hover {
+    color: #04aa6d;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.socials a {
+    padding-left: 2rem;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin-square,
+.fa-discord {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.about {
+    font-size: 20px;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.about a {
+    color: white;
+}
+
+.about a:hover {
+    color: #04aa6d;
+}
+
+.fa-thumbs-o-up {
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+}
+.gif{
+    width: 70%;
+}
+
+/* Footer section ends here */
+@media screen and(max-width:600px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+  .padding1{
+    width: 100%;
+  }
+  .padding2{
+    padding: 0px 24px 90px 24px;
+  }
+  .padding3{
+    padding: 0px 24px 90px 24px;
+  }
+  .image{
+    height: 245px;
+  }
+  .gif{
+    width:100%;
+  }
+  .codeeditorbr-left {
+    width: 24%;
+}
+.codeeditorbr-input {
+    margin-left: 15px;
+}
+
+.w3-mobile {
+    display: block;
+    width: 100%!important;
+}
+h1{
+    font-size: 50px !important;
+}
+
+#howto_iframe {
+    height: 280px;
+}
+}
+@media screen and (max-width: 800px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .left img{
+        width:80px;
+    }
+
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  }
+  @media screen and (max-width: 800px) {
+    .topnav1 a {display: none;}
+    .topnav1 a.icon1 {
+    float: right;
+      display: block;
+      text-decoration: none;
+    }
+
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav1.responsive1 {position: relative;}
+    .topnav1.responsive1 .icon1 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav1.responsive1 a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  }
+  
